@@ -1,0 +1,62 @@
+.AppContainer {
+}
+.BodyContainer {
+}
+.HeaderContainer {
+  background-color: #003580;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+@keyframes TextAnim {
+  0% {
+    margin-top: 0;
+  }
+  16% {
+    margin-top: -80px;
+  }
+  33% {
+    margin-top: -170px;
+  }
+  50% {
+    margin-top: -260px;
+  }
+  66% {
+    margin-top: -340px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.LeaftSection {
+  height: 55vh;
+  position: relative;
+}
+.LeftSectionOne {
+  width: 550px;
+  color: white;
+  /* background-color: #f1f1f1; */
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.LeftSectionTwo {
+  width: 550px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.animation {
+  height: 65px;
+  overflow: hidden;
+}
+.slide:first-child {
+  animation-name: TextAnim;
+  animation-duration: 12s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.RightSection {
+}
