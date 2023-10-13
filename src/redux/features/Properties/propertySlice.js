@@ -8,7 +8,7 @@ export const createHotel = createAsyncThunk(
       const response = await axios.post(
         "https://realtimebookapi.onrender.com/api/hotels/createhotel",
         formValue,
-        { withCredentials: true }
+        { withCredentials: true } 
       );
       navigate("/partnersdashboard");
       return response.data;
