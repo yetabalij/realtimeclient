@@ -19,7 +19,7 @@ const Bar = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/bar?page=${pageNumber}`)
+      .get(`https://realtimebookapi.onrender.com/api/bar?page=${pageNumber}`)
       .then((res) => {
         setBar(res.data.Bar);
         setTotalPages(res.data.totalPages);

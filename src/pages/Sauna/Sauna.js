@@ -18,7 +18,7 @@ const Sauna = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/sauna?page=${pageNumber}`)
+      .get(`https://realtimebookapi.onrender.com/api/sauna?page=${pageNumber}`)
       .then((res) => {
         setSauna(res.data.Sauna);
         setTotalPages(res.data.totalPages);

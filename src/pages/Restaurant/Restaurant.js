@@ -19,7 +19,7 @@ const Restaurant = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/restaurant?page=${pageNumber}`)
+      .get(`https://realtimebookapi.onrender.com/api/restaurant?page=${pageNumber}`)
       .then((res) => {
         setRestaurants(res.data.Restaurants);
         setTotalPages(res.data.totalPages);

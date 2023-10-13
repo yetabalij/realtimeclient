@@ -63,7 +63,7 @@ const PropertyType = () => {
   const [propertyCount, setPropertyCount] = useState(0);
   const navigate = useNavigate();
   useEffect(() => {
-    axios.get("http://localhost:8000/api/propertyType").then((res) => {
+    axios.get("https://realtimebookapi.onrender.com/api/propertyType").then((res) => {
       setPropertyCount(res.data);
     });
   }, []);

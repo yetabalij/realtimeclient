@@ -18,7 +18,7 @@ const Spa = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/spa?page=${pageNumber}`)
+      .get(`https://realtimebookapi.onrender.com/api/spa?page=${pageNumber}`)
       .then((res) => {
         setSpa(res.data.Spa);
         setTotalPages(res.data.totalPages);

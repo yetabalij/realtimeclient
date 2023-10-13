@@ -6,7 +6,7 @@ export const gustRegister = createAsyncThunk(
   async ({ formValue, navigate }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/auth/register",
+        "https://realtimebookapi.onrender.com/api/auth/register",
         formValue,
         { withCredentials: true }
       );
@@ -23,7 +23,7 @@ export const gustSignIn = createAsyncThunk(
   async ({ formValue, navigate }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://realtimebookapi.onrender.com/api/auth/login",
         formValue,
         { withCredentials: true }
       );

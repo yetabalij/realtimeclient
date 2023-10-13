@@ -6,7 +6,7 @@ export const createHotel = createAsyncThunk(
   async ({ formValue, navigate }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/hotels/createhotel",
+        "https://realtimebookapi.onrender.com/api/hotels/createhotel",
         formValue,
         { withCredentials: true }
       );
@@ -23,7 +23,7 @@ export const partnerProperty = createAsyncThunk(
   async (formValue) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/hotels/propertybypartner",
+        "https://realtimebookapi.onrender.com/api/hotels/propertybypartner",
         formValue,
         { withCredentials: true }
       );

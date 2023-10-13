@@ -65,7 +65,7 @@ const Room = () => {
     if (Property !== null && Property[0]?._id) {
       axios
         .get(
-          `http://localhost:8000/api/rooms/roomsbyproperty/${Property[0]?._id}`
+          `https://realtimebookapi.onrender.com/api/rooms/roomsbyproperty/${Property[0]?._id}`
         )
         .then((res) => {
           setData(res.data);
@@ -78,7 +78,7 @@ const Room = () => {
   };
   const onYesHandler = () => {
     axios
-      .delete(`http://localhost:8000/api/rooms/delete/${deleteId}`)
+      .delete(`https://realtimebookapi.onrender.com/api/rooms/delete/${deleteId}`)
       .then((res) => {
         setDeleteSuccess(res.data);
         setIsDelete(false);

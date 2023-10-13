@@ -6,7 +6,7 @@ export const searchHotels = createAsyncThunk(
   async ({ formValue, navigate }) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/search",
+        "https://realtimebookapi.onrender.com/api/search",
         formValue
       );
       navigate("/searchhotels");

@@ -111,7 +111,7 @@ const Rooms = () => {
   const navigate = useNavigate();
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8000/api/rooms/create", formValue);
+    axios.post("https://realtimebookapi.onrender.com/api/rooms/create", formValue);
     navigate("/room");
   };
 

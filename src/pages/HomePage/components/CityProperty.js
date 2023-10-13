@@ -60,7 +60,7 @@ const CityProperty = () => {
   const [cityProperty, setCityProperty] = useState(0);
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/propertybycity")
+      .get("https://realtimebookapi.onrender.com/api/propertybycity")
       .then((res) => setCityProperty(res.data));
   }, []);
 
