@@ -6,7 +6,7 @@ export const partnersRegister = createAsyncThunk(
   async ({ formValue, navigate }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "https://realtimebookapi.onrender.com/api/partnerregister",
+        "https://realtimebook.onrender.com/api/partnerregister",
         formValue,
         { withCredentials: true }
       );
@@ -22,7 +22,7 @@ export const partnersLogin = createAsyncThunk(
   async ({ formValue, navigate }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "https://realtimebookapi.onrender.com/api/partnerlogin",
+        "https://realtimebook.onrender.com/api/partnerlogin",
         formValue,
         { withCredentials: true }
       );
